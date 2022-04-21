@@ -1,1 +1,33 @@
+:root{
+    --white:#fff;
+    --black:#000;
+    --dark-yellow:#dfb736;
+    --gray:#484545;
+    --light-black:#161515;
+    --black-type:#1D1C1C;
 
+}
+
+nav  {
+    overflow: hidden;
+}
+
+/*navbar code*/
+
+
+nav a.nav-link {
+    font-size: 1.2rem;
+    letter-spacing: 0.0375rem;
+    margin: 0 0.75rem;
+}
+
+nav ul li {
+    text-transform: uppercase ;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    border-top: 0.1875rem solid var(--dark-yellow);
+
+}
