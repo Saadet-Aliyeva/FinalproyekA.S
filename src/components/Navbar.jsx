@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-function Navbar (){
+const Navbar = () =>  {
     return(
         <nav className="navbar navbar-expand-lg navbar-light ">
       <a class="navbar-brand" href="#"></a>
