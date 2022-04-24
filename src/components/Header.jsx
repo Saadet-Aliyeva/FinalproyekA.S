@@ -9,16 +9,17 @@ const Header = () => {
              <Typed
              className="typed-text"
                 strings={[
-                    'yui komori',
-                    'Search for categories',
-                    'Search for brands']}
+                    'Yui komori',
+                    'Construction of houses',
+                    'Colors are combined'
+                ]}
                     typeSpeed={40}
                     backSpeed={50}
                   
                     loop >
                     
                 </Typed>
-             <a href="" className="downloandcv" downloadcv>Dowload CV</a>
+             <a href="" className="downloandcv" downloadcv>Discover Now</a>
         </div>   
         
         </div>

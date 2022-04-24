@@ -12,16 +12,16 @@
     padding: 0;
 }
 
-body{
-    background: url(bg.jpg);
-    background-size: cover;
-    height: 100vh;
+
     
    /* background-position: center;*/
-}
+
 
 nav  {
     overflow: hidden;
+background-color: #af7a43;
+    
+    
     
 }
 
@@ -50,6 +50,13 @@ nav ul li {
 
 
 /* Header ucun CSS kodlari  */
+.header-wrapper {
+    background: url(bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    
+}
 .main-info{
     position: relative;
     top: 200px;
@@ -94,3 +101,32 @@ nav ul li {
     color: var(--white);
     transition: .4s ease-in-out;
 }
+
+/*About qismi*/
+.photo-wrap{
+    background: url(im.jpg);
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;  
+}
+ 
+.about-heading {
+    color: var(--black-type);
+    text-transform: uppercase;
+}
+
+@media(max-width:468px) {
+    .about-heading {
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+}
+.p-text{
+    text-align:justify ;
+}
+
+        
+        
+    
