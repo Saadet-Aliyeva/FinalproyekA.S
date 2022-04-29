@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
+import Pricing from './components/Pricing';
 function App () {
 return (
   <>
@@ -13,6 +14,7 @@ return (
  <Navbar />
  <Header />
  <AboutMe />
+ <Pricing />
  </>
   );
 }
