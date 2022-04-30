@@ -9,7 +9,7 @@ const Header = () => {
              <Typed
              className="typed-text"
                 strings={[
-                    'Yui komori',
+                    'Yui Ohto',
                     'Construction of houses',
                     'Colors are combined'
                 ]}

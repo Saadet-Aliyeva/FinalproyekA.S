@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Pricing from './components/Pricing';
+import Contact from './components/Contact';
 function App () {
 return (
   <>
@@ -15,6 +16,7 @@ return (
  <Header />
  <AboutMe />
  <Pricing />
+ <Contact />
  </>
   );
 }

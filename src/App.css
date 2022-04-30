@@ -7,6 +7,7 @@
     --black-type:#1D1C1C;
     --yellow:#F1B922;
     --mid-white:#F5EACD;
+    --orange-light:#af7a43;
 }
 *{
     margin: 0;
@@ -20,7 +21,7 @@
 
 nav  {
     overflow: hidden;
-background-color: #af7a43;
+background-color: var(--orange-light);
     
     
     
@@ -134,7 +135,7 @@ nav ul li {
  } 
  .gg{
    margin: 0 ;
-   background-color: var(--mid-white);
+   background-color: #FCF9F1;
    min-width: 100vw;
    min-height: 100vh;
    display: flex;
@@ -152,7 +153,7 @@ nav ul li {
  }
    .price-column {
     background-color: var(--whitew);
-    box-shadow: 0 7px 30px var(--gray);
+    box-shadow: 0 7px 30px var(--orange-light);
     padding: 2rem;
     flex-grow: 1;
     flex-basis: 0;
@@ -162,9 +163,9 @@ nav ul li {
    }
   .price-column.pp {
       
-      background-color: var(--gray);
+      background-color: var(--orange-light);
       color: var(--mid-white);
-      box-shadow: 0 7px 30px var(--black);
+      box-shadow: 0 7px 30px var(--orange-light);
       margin-bottom: -1.5rem;
       padding-bottom: 3.5rem;
 
@@ -222,14 +223,14 @@ nav ul li {
         margin-bottom: 3rem; 
     }
     .price-column.pp.divider {
-        background-color: var(--black);
+        background-color: var(--orange-light);
 
     }
 
 
 .cta {
     border: none;
-    background-color: var(--gray);
+    background-color: var(--orange-light);
     color: var(--white);
     width: 100%;
     padding: .75rem 1rem;
@@ -243,12 +244,12 @@ nav ul li {
 
 .cta-m{
     border: none;
-    background-color: var(--mid-white);
-    color: var(--light-black);
+    background-color: var(--white);
+    color: var(--orange-light);
     width: 100%;
     padding: .75rem 1rem;
     cursor: pointer;
-    font-family: var(--gray);
+    font-family: var(--orange-light);
     font-weight: bold;
     border-radius: 4px;
     margin-top: 3rem;
@@ -257,7 +258,7 @@ nav ul li {
 
 .price-column-popular .cta{
     background-color: var(--white) ;
-    color: var(--gray);
+    color: var(--orange-light);
 
 }
 
@@ -268,3 +269,178 @@ nav ul li {
 .cta-m:hover, cta-m:focus {
     transform: scale(1.1);
 }
+
+/*Contact qismi*/
+
+.cc{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+    position: relaative;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:url(contact-bg.jpg);
+    background-size: cover;
+}
+
+.contact .content {
+
+    max-width: 800px;
+    text-align: center;
+
+}
+
+.contact .content h2 
+{
+ font-size: 36px;
+ font-weight: 500;
+ color: var(--white);
+
+}
+
+.contact .content p {
+font-weight: 300;
+color: var(--white);
+
+}
+.container {
+     width: 100%;
+     display:flex;
+     justify-content: center ;
+     align-items: center;
+     margin-top: 30px;
+
+}
+
+.container .contactINfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container .contactINfo .box {
+    position: relative ;
+    padding: 20px 0;
+    display: flex;
+
+}
+
+.container .contactINfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background:var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+
+
+.container .contactINfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: var(--white);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactINfo .box .text h3 {
+    font-weight: 500;
+    color: #ecd37f;
+}
+
+/*Contact-send massage*/
+.contactFrom {
+    width: 40%;
+    padding: 40px;
+    background: var(--white);
+}
+
+.contactFrom h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactFrom .inputBox {
+
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.contactFrom .inputBox input,
+.contactFrom .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size:16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactFrom .inputBox span
+{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+
+}
+
+.contactFrom .inputBox input:focus ~ span,
+.contactFrom .inputBox input:valid ~ span,
+.contactFrom .inputBox textarea:focus ~ span,
+.contactFrom .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+
+}
+
+
+.contactFrom .inputBox input[type="submit"] {
+    width: 100px;
+    background: var(--dark-yellow);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px; 
+}
+
+ @media (max-width: 991px)
+ {
+     .contact{
+         padding: 50px;
+     }
+     .container{
+         flex-direction: column;
+     }
+     .container .contactINfo {
+         margin-bottom: 40px ;
+     }
+     .container .contactINfo,
+     .contactFrom{
+         width: 100%;
+     }
+ }
